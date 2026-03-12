@@ -7,3 +7,4 @@ UserSettings
 .vsconfig
 *.csproj
 *.sln
+/Game_ReviveSummoner/Assets/AseetStore
