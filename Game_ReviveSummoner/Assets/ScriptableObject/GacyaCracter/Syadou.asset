@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7402b9effabaa847a4779b70cde2f6b, type: 3}
+  m_Name: Syadou
+  m_EditorClassIdentifier: 
+  characterName: "\u30B7\u30E3\u30C9\u30A6"
+  pickupCharacterSprite: {fileID: 21300000, guid: f4c248be228da5a4fa225025a20f1540, type: 3}
+  pickUpTitleSprite: {fileID: 21300000, guid: 6017a32244476934685df415ac48af68, type: 3}
+  miniCharacterSprite: {fileID: 21300000, guid: 948ae463e0d900c4a8f5f561a0548b04, type: 3}
+  magicCircleColor: {r: 0.4433962, g: 0.38692594, b: 0.38692594, a: 1}
+  backgroundSprite: {fileID: 21300000, guid: 4a5cf1b47d03124439e9aa744f6d37f8, type: 3}

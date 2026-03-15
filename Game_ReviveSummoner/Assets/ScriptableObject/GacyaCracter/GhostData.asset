@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7402b9effabaa847a4779b70cde2f6b, type: 3}
-  m_Name: YukiData
+  m_Name: GhostData
   m_EditorClassIdentifier: 
-  characterName: Yuki
-  pickupCharacterSprite: {fileID: 21300000, guid: dc110956d8637cf48a3e95912d024c7c, type: 3}
-  pickUpTitleSprite: {fileID: 21300000, guid: bfbb9c58aee647c4aacb4e98fd8bda6a, type: 3}
-  miniCharacterSprite: {fileID: 21300000, guid: 9c72fac1c091d5e4ead3201079d03dcf, type: 3}
+  characterName: Ghost
+  pickupCharacterSprite: {fileID: 21300000, guid: 30e2e59a0b5ba66458f9599337aafb91, type: 3}
+  pickUpTitleSprite: {fileID: 21300000, guid: deaad981b5c59a14b93d2917388c28d8, type: 3}
+  miniCharacterSprite: {fileID: 21300000, guid: f07e29249f586a64d90f1a5bcd6453fd, type: 3}
   magicCircleColor: {r: 0.8702893, g: 0.9339623, b: 0.82382524, a: 1}
-  backgroundSprite: {fileID: 21300000, guid: 3f27e27e8b0bbf74cb94c14392df09ef, type: 3}
+  backgroundSprite: {fileID: 21300000, guid: 7999b8f986567904a84f953511f169ce, type: 3}
