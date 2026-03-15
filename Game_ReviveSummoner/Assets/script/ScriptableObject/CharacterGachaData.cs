@@ -1,6 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+/// <summary>
+/// 属性一覧
+/// </summary>
+public enum CharacterAttribute
+{
+    Fire,
+    Water,
+    Wood,
+    Light,
+    Dark,
+}
+
 /// <summary>
 /// キャラクター1人分の情報をまとめて持たせるためのクラス
 /// </summary> 
@@ -11,14 +24,17 @@ public class CharacterGachaData : ScriptableObject
     [Header("キャラクター名")]
     public string characterName;
 
+    [Header("属性")]
+    public CharacterAttribute attribute;
+
     [Header("メインイラスト")]
-    public Sprite pickupCharacterSprite;     
+    public Sprite pickupCharacterSprite;
 
     [Header("名前イラスト")]
-    public Sprite pickUpTitleSprite;         
+    public Sprite pickUpTitleSprite;
 
     [Header("ミニキャラ")]
-    public Sprite miniCharacterSprite;      
+    public Sprite miniCharacterSprite;
 
     [Header("魔法陣の色")]
     public Color magicCircleColor = Color.white;

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TogeData
   m_EditorClassIdentifier: 
   characterName: "\u30C8\u30B2"
+  attribute: 2
   pickupCharacterSprite: {fileID: 21300000, guid: 5c8f90e59a56dcf4cbd4918e0c913392, type: 3}
   pickUpTitleSprite: {fileID: 21300000, guid: 787c6c64e6fbb1f4d8d6b613a4193b2f, type: 3}
   miniCharacterSprite: {fileID: 21300000, guid: c4042133d49fbe44baaf735df804cb6b, type: 3}

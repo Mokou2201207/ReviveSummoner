@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: YukiData
   m_EditorClassIdentifier: 
   characterName: Yuki
+  attribute: 2
   pickupCharacterSprite: {fileID: 21300000, guid: dc110956d8637cf48a3e95912d024c7c, type: 3}
   pickUpTitleSprite: {fileID: 21300000, guid: bfbb9c58aee647c4aacb4e98fd8bda6a, type: 3}
   miniCharacterSprite: {fileID: 21300000, guid: 9c72fac1c091d5e4ead3201079d03dcf, type: 3}

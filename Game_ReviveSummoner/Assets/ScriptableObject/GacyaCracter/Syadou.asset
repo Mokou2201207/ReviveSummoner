@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Syadou
   m_EditorClassIdentifier: 
   characterName: "\u30B7\u30E3\u30C9\u30A6"
+  attribute: 4
   pickupCharacterSprite: {fileID: 21300000, guid: f4c248be228da5a4fa225025a20f1540, type: 3}
   pickUpTitleSprite: {fileID: 21300000, guid: 6017a32244476934685df415ac48af68, type: 3}
   miniCharacterSprite: {fileID: 21300000, guid: 948ae463e0d900c4a8f5f561a0548b04, type: 3}
