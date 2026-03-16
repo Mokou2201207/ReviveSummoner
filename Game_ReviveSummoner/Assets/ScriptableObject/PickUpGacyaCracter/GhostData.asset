@@ -12,7 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7402b9effabaa847a4779b70cde2f6b, type: 3}
   m_Name: GhostData
   m_EditorClassIdentifier: 
+  pickupList:
+  - {fileID: 11400000, guid: e9370b0e60f6d7343bd6a55456ae3a12, type: 2}
+  commonList:
+  - {fileID: 11400000, guid: 7b394d2f3f1517e4c984502a483f1971, type: 2}
+  - {fileID: 11400000, guid: a5fe36c4c2ff57645a37732d7ac61911, type: 2}
   characterName: Ghost
+  attribute: 0
   pickupCharacterSprite: {fileID: 21300000, guid: 30e2e59a0b5ba66458f9599337aafb91, type: 3}
   pickUpTitleSprite: {fileID: 21300000, guid: deaad981b5c59a14b93d2917388c28d8, type: 3}
   miniCharacterSprite: {fileID: 21300000, guid: f07e29249f586a64d90f1a5bcd6453fd, type: 3}

@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7402b9effabaa847a4779b70cde2f6b, type: 3}
   m_Name: Syadou
   m_EditorClassIdentifier: 
-  characterName: "\u30B7\u30E3\u30C9\u30A6"
+  pickupList:
+  - {fileID: 11400000, guid: bb1522afdf092ba49b0d9c2cc47f424e, type: 2}
+  commonList:
+  - {fileID: 11400000, guid: 7b394d2f3f1517e4c984502a483f1971, type: 2}
+  - {fileID: 11400000, guid: a5fe36c4c2ff57645a37732d7ac61911, type: 2}
+  characterName: Syado
   attribute: 4
   pickupCharacterSprite: {fileID: 21300000, guid: f4c248be228da5a4fa225025a20f1540, type: 3}
   pickUpTitleSprite: {fileID: 21300000, guid: 6017a32244476934685df415ac48af68, type: 3}

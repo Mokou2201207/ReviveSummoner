@@ -21,6 +21,12 @@ public enum CharacterAttribute
 [CreateAssetMenu(fileName = "Data", menuName = "キャラクターのガチャデータ/CharacterData", order = 1)]
 public class CharacterGachaData : ScriptableObject
 {
+    //ガチャの中身
+    [Header("ピックアップキャラ")]
+    public List<StateCharacter> pickupList; 
+    [Header("その他のキャラ")]
+    public List<StateCharacter> commonList; 
+
     [Header("キャラクター名")]
     public string characterName;
 

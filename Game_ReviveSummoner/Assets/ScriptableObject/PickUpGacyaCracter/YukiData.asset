@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7402b9effabaa847a4779b70cde2f6b, type: 3}
   m_Name: YukiData
   m_EditorClassIdentifier: 
+  pickupList:
+  - {fileID: 11400000, guid: 76349c72a97638a4c8b5bfad1f744f80, type: 2}
+  commonList:
+  - {fileID: 11400000, guid: 7b394d2f3f1517e4c984502a483f1971, type: 2}
+  - {fileID: 11400000, guid: a5fe36c4c2ff57645a37732d7ac61911, type: 2}
   characterName: Yuki
   attribute: 2
   pickupCharacterSprite: {fileID: 21300000, guid: dc110956d8637cf48a3e95912d024c7c, type: 3}

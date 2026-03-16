@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: cfcbf0f6e690d1847a49404a13858222, type: 2}
-  gachaManager: {fileID: 171799620}
+  gachaManager: {fileID: 831978142}
 --- !u!1 &19238567
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,7 +719,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 164230835}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 831978142}
+        m_TargetAssemblyTypeName: GachaManager, Assembly-CSharp
+        m_MethodName: DrawTenGacha
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &164230835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -767,7 +779,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 171799619}
-  - component: {fileID: 171799620}
   - component: {fileID: 171799621}
   m_Layer: 5
   m_Name: Manager
@@ -795,33 +806,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &171799620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 171799618}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 352105ce24063d14ba696cc5999184e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pickupCharacterImage: {fileID: 806693797}
-  pickUpTitleImage: {fileID: 358540415}
-  miniCharacterImage: {fileID: 1149856442}
-  magicCircleImage: {fileID: 1407458340}
-  backgroundImage: {fileID: 1309654213}
-  contentTransform: {fileID: 23585676}
-  bgmAudioSource: {fileID: 171799621}
-  fireBgm: {fileID: 8300000, guid: 9728515a1d479e14f92c426b2938fb21, type: 3}
-  waterBgm: {fileID: 0}
-  woodBgm: {fileID: 8300000, guid: dc882becc4654ef4197942b23341dd19, type: 3}
-  lightBgm: {fileID: 0}
-  darkBgm: {fileID: 8300000, guid: 252fbfb0f3d34fc4b8d2a0fc64747cf8, type: 3}
-  fadeDuration: 0.3
-  maxVolume: 0.3
-  loadingScreen: {fileID: 0}
 --- !u!82 &171799621
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1064,7 +1048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: bbe1d3a646553b840a67938e85878b5b, type: 2}
-  gachaManager: {fileID: 171799620}
+  gachaManager: {fileID: 831978142}
 --- !u!1 &215822090
 GameObject:
   m_ObjectHideFlags: 0
@@ -2102,7 +2086,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 584427948}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 831978140}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &584427948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2444,7 +2440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: 5c4aa0d5ede825d44a56116abcd5fc88, type: 2}
-  gachaManager: {fileID: 171799620}
+  gachaManager: {fileID: 831978142}
 --- !u!1 &783232582
 GameObject:
   m_ObjectHideFlags: 0
@@ -2722,6 +2718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 352105ce24063d14ba696cc5999184e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gemCountText: {fileID: 783232584}
   pickupCharacterImage: {fileID: 806693797}
   pickUpTitleImage: {fileID: 358540415}
   miniCharacterImage: {fileID: 1149856442}
@@ -2737,6 +2734,8 @@ MonoBehaviour:
   fadeDuration: 0.3
   maxVolume: 0.3
   loadingScreen: {fileID: 449846536}
+  currentPickupPool: []
+  currentCommonPool: []
 --- !u!1 &905785471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2958,7 +2957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: 7a7cd3a38fbab8540a37d0772b6b9580, type: 2}
-  gachaManager: {fileID: 171799620}
+  gachaManager: {fileID: 831978142}
 --- !u!1 &1061586910
 GameObject:
   m_ObjectHideFlags: 0
@@ -3206,7 +3205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1146774544}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 831978142}
+        m_TargetAssemblyTypeName: GachaManager, Assembly-CSharp
+        m_MethodName: DrawSingleGacha
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1146774544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4443,7 +4454,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterData: {fileID: 11400000, guid: 56008ec7c1c20b74ab2de5a415623700, type: 2}
-  gachaManager: {fileID: 171799620}
+  gachaManager: {fileID: 831978142}
 --- !u!1 &1977329395
 GameObject:
   m_ObjectHideFlags: 0
@@ -4592,7 +4603,7 @@ MonoBehaviour:
   gachaPanel: {fileID: 831978140}
   loadingScreen: {fileID: 449846536}
   firstCharacterData: {fileID: 11400000, guid: cfcbf0f6e690d1847a49404a13858222, type: 2}
-  gachaManager: {fileID: 171799620}
+  gachaManager: {fileID: 0}
 --- !u!1 &2036959121
 GameObject:
   m_ObjectHideFlags: 0

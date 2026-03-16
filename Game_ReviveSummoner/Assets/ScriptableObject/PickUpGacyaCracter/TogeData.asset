@@ -12,7 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7402b9effabaa847a4779b70cde2f6b, type: 3}
   m_Name: TogeData
   m_EditorClassIdentifier: 
-  characterName: "\u30C8\u30B2"
+  pickupList:
+  - {fileID: 11400000, guid: 0deca0522f83e6f43a718c690af0f050, type: 2}
+  commonList:
+  - {fileID: 11400000, guid: 7b394d2f3f1517e4c984502a483f1971, type: 2}
+  - {fileID: 11400000, guid: a5fe36c4c2ff57645a37732d7ac61911, type: 2}
+  characterName: Toge
   attribute: 2
   pickupCharacterSprite: {fileID: 21300000, guid: 5c8f90e59a56dcf4cbd4918e0c913392, type: 3}
   pickUpTitleSprite: {fileID: 21300000, guid: 787c6c64e6fbb1f4d8d6b613a4193b2f, type: 3}
