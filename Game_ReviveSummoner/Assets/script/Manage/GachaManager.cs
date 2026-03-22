@@ -363,6 +363,11 @@ public class GachaManager : MonoBehaviour
             yield return new WaitForSeconds(intervalBetweenCards);
         }
 
+        foreach (var charData in results)
+        {
+            CollectManager.Instance.AddCharacter(charData);
+        }
+
         // 全て終わったら「戻る」ボタンを表示
         if (closeResultButton != null) closeResultButton.SetActive(true);
     }
