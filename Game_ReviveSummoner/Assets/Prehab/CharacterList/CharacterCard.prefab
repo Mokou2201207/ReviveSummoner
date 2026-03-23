@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 3993623421254864609}
   - component: {fileID: 4919610457545094872}
   - component: {fileID: 6639741862141644163}
+  - component: {fileID: 1793766986977519805}
   m_Layer: 5
   m_Name: CharacterCard
   m_TagString: Untagged
@@ -215,6 +216,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Padding: {x: 0, y: 0, z: 0, w: 0}
   m_Softness: {x: 100, y: 100}
+--- !u!114 &1793766986977519805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4168578236945429839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e64b47af2b0156d46b96914a765b196c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterImage: {fileID: 165934428914929045}
+  nameText: {fileID: 5575701487902979183}
+  levelText: {fileID: 7486447358258180093}
+  attributeColorImage: {fileID: 8716038887756325671}
+  fireColor: {r: 1, g: 0.3, b: 0.3, a: 1}
+  waterColor: {r: 0.3, g: 0.5, b: 1, a: 1}
+  woodColor: {r: 0.3, g: 1, b: 0.3, a: 1}
+  lightColor: {r: 1, g: 1, b: 0.5, a: 1}
+  darkColor: {r: 0.7, g: 0.3, b: 1, a: 1}
 --- !u!1 &4672915179644020918
 GameObject:
   m_ObjectHideFlags: 0

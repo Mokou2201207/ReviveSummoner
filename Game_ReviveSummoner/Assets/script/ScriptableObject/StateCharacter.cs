@@ -53,6 +53,8 @@ public class StateCharacter : ScriptableObject
     [Header("スキル")]
     public CharacterSkills skill;
 
+    [Header("キャラクターの立ち絵")]
+    public Sprite CharacterSprite;
     [Header("ガチャ結果一覧で使う小さい顔アイコン")]
     public Sprite iconSprite;     
 

@@ -1285,7 +1285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1044413252434062726, guid: 2599b3bf2250d2241b65d9ebe9227d5d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 1470
       objectReference: {fileID: 0}
     - target: {fileID: 1044413252434062726, guid: 2599b3bf2250d2241b65d9ebe9227d5d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1466,7 +1466,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1044413252434062726, guid: 2599b3bf2250d2241b65d9ebe9227d5d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 1140
       objectReference: {fileID: 0}
     - target: {fileID: 1044413252434062726, guid: 2599b3bf2250d2241b65d9ebe9227d5d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -1581,7 +1581,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 278625944}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1607619990}
+        m_TargetAssemblyTypeName: CharacterListController, Assembly-CSharp
+        m_MethodName: OnControllerList
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &278625944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1956,6 +1968,7 @@ RectTransform:
   - {fileID: 831978141}
   - {fileID: 1607619987}
   - {fileID: 449846537}
+  - {fileID: 1083988651}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2037,7 +2050,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1044413252434062726, guid: 2599b3bf2250d2241b65d9ebe9227d5d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 480
       objectReference: {fileID: 0}
     - target: {fileID: 1044413252434062726, guid: 2599b3bf2250d2241b65d9ebe9227d5d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2143,7 +2156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1044413252434062726, guid: 2599b3bf2250d2241b65d9ebe9227d5d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 810
       objectReference: {fileID: 0}
     - target: {fileID: 1044413252434062726, guid: 2599b3bf2250d2241b65d9ebe9227d5d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4043,6 +4056,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1061586910}
   m_CullTransparentMesh: 1
+--- !u!1 &1083988650
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1083988651}
+  - component: {fileID: 1083988652}
+  m_Layer: 5
+  m_Name: Manage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1083988651
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083988650}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 365668465}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1083988652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083988650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 478a45eb6a0dbdd4eb28ec5af9e14b37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ownedCharacters: []
 --- !u!1 &1090317283
 GameObject:
   m_ObjectHideFlags: 0
@@ -5772,13 +5834,14 @@ GameObject:
   - component: {fileID: 1607619987}
   - component: {fileID: 1607619989}
   - component: {fileID: 1607619988}
+  - component: {fileID: 1607619990}
   m_Layer: 5
   m_Name: CharacterListPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1607619987
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5839,6 +5902,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607619986}
   m_CullTransparentMesh: 1
+--- !u!114 &1607619990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607619986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38faecf8d7e6b4b4d8b3e65a6b4b5806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardPrefab: {fileID: 4168578236945429839, guid: 2599b3bf2250d2241b65d9ebe9227d5d, type: 3}
+  contentTransform: {fileID: 1688701098}
+  characterListPanal: {fileID: 1607619986}
 --- !u!1 &1610540622
 GameObject:
   m_ObjectHideFlags: 0
@@ -6054,7 +6132,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1044413252434062726, guid: 2599b3bf2250d2241b65d9ebe9227d5d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 2130
       objectReference: {fileID: 0}
     - target: {fileID: 1044413252434062726, guid: 2599b3bf2250d2241b65d9ebe9227d5d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -6167,7 +6245,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1670545639}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1607619990}
+        m_TargetAssemblyTypeName: CharacterListController, Assembly-CSharp
+        m_MethodName: OffControllerList
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1670545639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6280,7 +6370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1044413252434062726, guid: 2599b3bf2250d2241b65d9ebe9227d5d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 1800
       objectReference: {fileID: 0}
     - target: {fileID: 1044413252434062726, guid: 2599b3bf2250d2241b65d9ebe9227d5d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -6354,7 +6444,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.00035325726, y: 0}
-  m_SizeDelta: {x: 0, y: 910.88}
+  m_SizeDelta: {x: 561.69995, y: 910.88}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1688701099
 MonoBehaviour:
