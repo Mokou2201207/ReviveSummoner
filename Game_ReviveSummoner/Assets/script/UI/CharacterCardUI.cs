@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -17,6 +18,11 @@ public class CharacterCardUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI levelText;
     [Header("属性表示の画像")]
     [SerializeField] private Image attributeColorImage;
+
+    [Header("レア度のImage場所")]
+    [SerializeField] private Image SterImage;
+    [Header("レア度のスプライト（配列低い順に星が少ない）")]
+    [SerializeField] private Sprite[] StreSprites;
 
     [Header("赤色")]
     [SerializeField] private Color fireColor = new Color(1f, 0.3f, 0.3f); 
@@ -50,6 +56,24 @@ public class CharacterCardUI : MonoBehaviour
         if (attributeColorImage != null)
         {
             attributeColorImage.color = GetAttributeColor(data.attribute);
+        }
+
+        //レア度に合わせてSpriteが変わる
+        if (SterImage!=null)
+        {
+            SterImage.sprite = GetSterImage(data.rarity);
+        }
+    }
+
+    private Sprite GetSterImage(CharacterRarity Rarity)
+    {
+        switch (Rarity)
+        {
+            case CharacterRarity.Star1: return StreSprites[0];
+            case CharacterRarity.Star2: return StreSprites[1];
+            case CharacterRarity.Star3: return StreSprites[2];
+            default: return StreSprites[3];
+
         }
     }
 

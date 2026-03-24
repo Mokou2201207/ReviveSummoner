@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.Linq;
+/// <summary>
+/// 今もってるキャラクターの種類だけの処理（重複不可）※所持してるキャラクターのデータはCollectManagerに入ってます。
+/// </summary>
 public class CharacterListController : MonoBehaviour
 {
     [Header("キャラクター一覧のprefab")]
@@ -17,6 +20,9 @@ public class CharacterListController : MonoBehaviour
         RefreshList();
     }
 
+    /// <summary>
+    /// 同じキャラクターがかぶったときの表示は同じにならない用処理
+    /// </summary>
     public void RefreshList()
     {
         //すでに並んでいる古いカードを全部消す
@@ -25,11 +31,15 @@ public class CharacterListController : MonoBehaviour
             Destroy(child.gameObject);
         }
 
-        //CollectionManagerから所持キャラリストを取得
-        List<StateCharacter> myCharacters = CollectManager.Instance.ownedCharacters;
+        //CollectionManagerからリストを取得し、重複を除外する
+        List<StateCharacter> uniqueCharacters = CollectManager.Instance.ownedCharacters
+             //かぶってるものを除外
+             .Distinct()
+             //リストとして保存
+             .ToList();
 
         //キャラクターの数だけプレハブを生成してデータを流し込む
-        foreach (StateCharacter charData in myCharacters)
+        foreach (StateCharacter charData in uniqueCharacters)
         {
             //インスタンス化
             GameObject newCard = Instantiate(cardPrefab, contentTransform);
