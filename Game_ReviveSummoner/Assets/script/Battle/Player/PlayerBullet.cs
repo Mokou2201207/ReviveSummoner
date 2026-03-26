@@ -18,13 +18,24 @@ public class PlayerBullet : MonoBehaviour
         }
     }
 
-    // 敵に当たった時の処理
+    /// <summary>
+    /// プレイヤーの弾が敵に当たったときの際の処理
+    /// </summary>
+    /// <param name="collision"></param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Enemy"))
         {
-            // 敵にダメージを与える
-            Debug.Log("敵に命中！");
+            //当たったオブジェクトからEnemyHpのスクリプトを探す
+           EnemyHp enumy = collision.GetComponent<EnemyHp>();
+
+            if (enumy!=null)
+            {
+                //10ダメージを与える
+                enumy.Damage(10f);
+            }
+
+            //玉を削除
             Destroy(gameObject);
         }
     }
