@@ -9,7 +9,7 @@ public class EnemyBulletSpawner : MonoBehaviour
     [Header("何秒おきに撃つか")]
     [SerializeField] private float spawnInterval = 1.0f;
 
-    //プレイヤーのコードと同じ座標に合わせるのがコツ！
+    //プレイヤーのコードと同じ座標に合わせる
     [SerializeField] private float[] laneYPositions = { 2.7f, -0.7f, -2.7f };
     // 画面の右端
     [SerializeField] private float spawnX = 10f; 
