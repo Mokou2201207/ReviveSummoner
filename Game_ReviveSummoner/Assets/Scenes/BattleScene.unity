@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hpSlider: {fileID: 1550699527}
-  maxHP: 100
+  maxHP: 500
   finishThreshold: 10
 --- !u!114 &215431644
 MonoBehaviour:
@@ -233,8 +233,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f477a31f3f654304c9bddfa9c998628d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amplitude: 2.5
-  frequency: 1
+  laneYPositions:
+  - 2
+  - 0
+  - -2
+  fastDuration: 1
+  slowDuration: 3
+  maxWaitTime: 1
 --- !u!114 &215431645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,9 +254,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 8238924463111422438, guid: 7e4ae260fbb94714c81135bdfad8ddbb, type: 3}
   laneYPositions:
-  - 2.7
-  - -0.7
-  - -2.7
+  - 2
+  - 0
+  - 2
   spawnX: 10
 --- !u!114 &215431646
 MonoBehaviour:
@@ -267,9 +272,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 8238924463111422438, guid: 7e4ae260fbb94714c81135bdfad8ddbb, type: 3}
   laneYPositions:
-  - 2.7
-  - -0.7
-  - -2.7
+  - 2
+  - 0
+  - 2
 --- !u!114 &215431647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1401,7 +1406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4551862985392818941, guid: d7efd390cc9f073488f064de4df6457f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.43
       objectReference: {fileID: 0}
     - target: {fileID: 4551862985392818941, guid: d7efd390cc9f073488f064de4df6457f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1542,7 +1547,7 @@ Transform:
   m_GameObject: {fileID: 1831506844}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.93, y: 0, z: 0}
+  m_LocalPosition: {x: -6.93, y: -0.06, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
